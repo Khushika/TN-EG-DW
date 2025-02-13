@@ -1,0 +1,1798 @@
+<!-- templates/data.html -->
+{% extends "base.html" %} {% block title %}Data Analytics{% endblock %} {% block
+content %}
+<div class="container ngo-listing">
+  <!-- Header Section -->
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+      <h2>NGOs and Foundations</h2>
+      <p class="mb-0">
+        Organizations Working Towards Sustainable Economic Growth and Employment
+        in Tamil Nadu
+      </p>
+    </div>
+  </div>
+
+  <!-- Quick Impact Stats -->
+  <div class="row mb-6">
+    <div class="col-md-3">
+      <div class="stat-card bg-info text-white">
+        <h3>6+</h3>
+        <p>Partner Organizations</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card bg-success text-white">
+        <h3>50,000+</h3>
+        <p>Beneficiaries</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card bg-warning text-dark">
+        <h3>100+</h3>
+        <p>Active Projects</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card bg-danger text-white">
+        <h3>20+</h3>
+        <p>Districts Covered</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Organizations Listing -->
+  <div class="row">
+    <!-- MSSRF -->
+    <div class="col-12 mb-4">
+      <div class="card organization-card">
+        <div class="card-header bg-success text-white">
+          <h3>M. S. Swaminathan Research Foundation (MSSRF)</h3>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="lead">{{ description }}</p>
+              <div class="mt-4">
+                <h4>Focus Areas:</h4>
+                <ul class="focus-areas">
+                  <li>Economic empowerment of rural women</li>
+                  <li>Sustainable development</li>
+                  <li>Science and technology integration</li>
+                  <li>Rural employment generation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-info">
+                <h4>Contact Information</h4>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone"></i> +91-44-22541229</li>
+                  <li><i class="bi bi-envelope"></i> mssrf@mssrf.res.in</li>
+                  <li><i class="bi bi-geo-alt"></i> Chennai, Tamil Nadu</li>
+                </ul>
+                <div class="mt-3">
+                  <a
+                    href="http://www.mssrf.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sevalaya -->
+    <div class="col-12 mb-4">
+      <div class="card organization-card">
+        <div class="card-header bg-info text-white">
+          <h3>Sevalaya</h3>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="lead">{{ description }}</p>
+              <div class="mt-4">
+                <h4>Key Programs:</h4>
+                <ul class="focus-areas">
+                  <li>Free education initiatives</li>
+                  <li>Vocational training programs</li>
+                  <li>Rural community empowerment</li>
+                  <li>Healthcare services</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-info">
+                <h4>Contact Information</h4>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone"></i> +91-44-26344243</li>
+                  <li>
+                    <i class="bi bi-envelope"></i>
+                    sevalayakasuva@sevalaya.org
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-alt"></i> Kasuva Village, Thiruvallur
+                    District
+                  </li>
+                </ul>
+                <div class="mt-3">
+                  <a
+                    href="http://www.sevalaya.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exnora International -->
+    <div class="col-12 mb-4">
+      <div class="card organization-card">
+        <div class="card-header bg-warning text-dark">
+          <h3>Exnora International</h3>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="lead">{{ description }}</p>
+              <div class="mt-4">
+                <h4>Focus Areas:</h4>
+                <ul class="focus-areas">
+                  <li>Environmental conservation</li>
+                  <li>Sustainable development</li>
+                  <li>Community-driven initiatives</li>
+                  <li>Waste management solutions</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-info">
+                <h4>Contact Information</h4>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone"></i> +91-44-26204466</li>
+                  <li><i class="bi bi-envelope"></i> exnora@exnora.org</li>
+                  <li><i class="bi bi-geo-alt"></i> Chennai, Tamil Nadu</li>
+                </ul>
+                <div class="mt-3">
+                  <a
+                    href="http://www.exnora.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <h2>Tamil Nadu Employment & Skill Development Hub</h2>
+        <p class="mb-0">
+          Your Gateway to Career Growth and Professional Development
+        </p>
+      </div>
+    </div>
+
+    <!-- Impact Statistics -->
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <div class="stat-card bg-info text-white">
+          <h3>25+</h3>
+          <p>Active Schemes</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card bg-success text-white">
+          <h3>100,000+</h3>
+          <p>Trained Candidates</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card bg-warning text-dark">
+          <h3>500+</h3>
+          <p>Partner Companies</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card bg-danger text-white">
+          <h3>32</h3>
+          <p>Districts Covered</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Major Schemes Section -->
+    <div class="card mb-4">
+      <div
+        class="card-header bg-success text-white d-flex justify-content-between align-items-center"
+      >
+        <h3>Major Skill Development Schemes</h3>
+        <div class="scheme-filters">
+          <select
+            id="sectorFilter"
+            class="form-select form-select-sm"
+            onchange="filterSchemes()"
+          >
+            <option value="all">All Sectors</option>
+            <option value="IT">IT/ITES</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Rural">Rural Development</option>
+            <option value="Entrepreneurship">Entrepreneurship</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <!-- Naan Mudhalvan -->
+        <div class="scheme-card mb-4" data-sector="IT">
+          <h4 class="scheme-title">Naan Mudhalvan</h4>
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                Premier skill development initiative focusing on industry-ready
+                training.
+              </p>
+              <div><strong>Launch Date:</strong> September 2022</div>
+              <div>
+                <strong>Eligibility:</strong> College students and recent
+                graduates
+              </div>
+              <div>
+                <strong>Benefits:</strong> Free training, certification,
+                placement assistance
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-box">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone"></i> 044-22501118</li>
+                  <li>
+                    <i class="bi bi-envelope"></i>
+                    support@naanmudhalvan.tn.gov.in
+                  </li>
+                  <li>
+                    <a
+                      href="https://naanmudhalvan.tn.gov.in"
+                      class="btn btn-primary mt-2"
+                      >Apply Now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TNSDC Programs -->
+        <div class="scheme-card mb-4" data-sector="IT Manufacturing Healthcare">
+          <h4 class="scheme-title">TNSDC Skill Training Programs</h4>
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                Comprehensive skill development programs across multiple
+                sectors.
+              </p>
+              <div><strong>Duration:</strong> 3-6 months</div>
+              <div>
+                <strong>Eligibility:</strong> Age 18-35, varies by program
+              </div>
+              <div>
+                <strong>Sectors:</strong> IT, Manufacturing, Healthcare,
+                Automotive, Construction
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-box">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone"></i> 044-22500107</li>
+                  <li><i class="bi bi-envelope"></i> support@tnsdc.in</li>
+                  <li>
+                    <a
+                      href="https://www.tnskill.tn.gov.in"
+                      class="btn btn-primary mt-2"
+                      >Explore Programs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tamil Nadu Apex Skill Development Centre -->
+        <div class="scheme-card mb-4" data-sector="IT Manufacturing Healthcare">
+          <h4 class="scheme-title">Tamil Nadu Apex Skill Development Centre</h4>
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                Industry-relevant skill training in automotive, healthcare,
+                logistics, IT, and construction.
+              </p>
+              <div>
+                <strong>Eligibility:</strong> Students, job seekers, working
+                professionals
+              </div>
+              <div>
+                <strong>Benefits:</strong> Advanced technical training,
+                placement support
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-box">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone"></i> 044-22200707</li>
+                  <li>
+                    <i class="bi bi-envelope"></i> info@tnapexskill.tn.gov.in
+                  </li>
+                  <li>
+                    <a
+                      href="https://tnapexskill.tn.gov.in"
+                      class="btn btn-primary mt-2"
+                      >Learn More</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tamil Nadu Rural Transformation Project (TNRTP) -->
+        <div class="scheme-card mb-4" data-sector="Rural Entrepreneurship">
+          <h4 class="scheme-title">
+            Tamil Nadu Rural Transformation Project (TNRTP)
+          </h4>
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                Skill training for rural youth to promote employment and
+                entrepreneurship.
+              </p>
+              <div><strong>Eligibility:</strong> Rural youth (18-35)</div>
+              <div>
+                <strong>Benefits:</strong> Training, mentorship, financial
+                support
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-box">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone"></i> 044-23355566</li>
+                  <li><i class="bi bi-envelope"></i> tnrtp@tn.gov.in</li>
+                  <li>
+                    <a href="https://www.tnrtp.org" class="btn btn-primary mt-2"
+                      >Get Started</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PMKVY Tamil Nadu -->
+        <div class="scheme-card mb-4" data-sector="IT Manufacturing Healthcare">
+          <h4 class="scheme-title">PMKVY Tamil Nadu</h4>
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                Free skill training in IT, electronics, construction,
+                healthcare, beauty & wellness.
+              </p>
+              <div>
+                <strong>Eligibility:</strong> Unemployed youth, school dropouts
+              </div>
+              <div>
+                <strong>Benefits:</strong> Free training, certification, job
+                placement
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-box">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone"></i> 011-23412345</li>
+                  <li>
+                    <i class="bi bi-envelope"></i> pmkvy@skillindia.gov.in
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pmkvyofficial.org"
+                      class="btn btn-primary mt-2"
+                      >Register Now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function filterSchemes() {
+        var selectedSector = document.getElementById("sectorFilter").value;
+        var schemes = document.querySelectorAll(".scheme-card");
+
+        schemes.forEach(function (scheme) {
+          var sectors = scheme.getAttribute("data-sector").split(" ");
+          if (selectedSector === "all" || sectors.includes(selectedSector)) {
+            scheme.style.display = "block";
+          } else {
+            scheme.style.display = "none";
+          }
+        });
+      }
+    </script>
+
+    <!-- Sector-wise Opportunities -->
+    <div class="card mb-4">
+      <div class="card-header bg-info text-white">
+        <h3>Sector-wise Job Opportunities</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <!-- IT/ITES Sector -->
+          <div class="col-md-4 mb-4">
+            <div class="sector-card">
+              <h4>IT/ITES</h4>
+              <div class="sector-stats">
+                <div class="stat">
+                  <span class="number">15,000+</span>
+                  <span class="label">Open Positions</span>
+                </div>
+                <div class="stat">
+                  <span class="number">₹4.5L</span>
+                  <span class="label">Avg. Starting Salary</span>
+                </div>
+              </div>
+              <div class="top-companies">
+                <h5>Top Hiring Companies</h5>
+                <ul>
+                  <li><a href="https://www.tcs.com" target="_blank">TCS</a></li>
+                  <li>
+                    <a href="https://www.infosys.com" target="_blank"
+                      >Infosys</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.wipro.com" target="_blank">Wipro</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manufacturing Sector -->
+          <div class="col-md-4 mb-4">
+            <div class="sector-card">
+              <h4>Manufacturing</h4>
+              <div class="sector-stats">
+                <div class="stat">
+                  <span class="number">8,000+</span>
+                  <span class="label">Open Positions</span>
+                </div>
+                <div class="stat">
+                  <span class="number">₹3.2L</span>
+                  <span class="label">Avg. Starting Salary</span>
+                </div>
+              </div>
+              <div class="top-companies">
+                <h5>Top Hiring Companies</h5>
+                <ul>
+                  <li>
+                    <a href="https://www.hyundai.com" target="_blank"
+                      >Hyundai</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.saint-gobain.com" target="_blank"
+                      >Saint Gobain</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.tvsmotor.com" target="_blank"
+                      >TVS Motors</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Healthcare Sector -->
+          <div class="col-md-4 mb-4">
+            <div class="sector-card">
+              <h4>Healthcare</h4>
+              <div class="sector-stats">
+                <div class="stat">
+                  <span class="number">5,000+</span>
+                  <span class="label">Open Positions</span>
+                </div>
+                <div class="stat">
+                  <span class="number">₹2.8L</span>
+                  <span class="label">Avg. Starting Salary</span>
+                </div>
+              </div>
+              <div class="top-companies">
+                <h5>Top Hiring Companies</h5>
+                <ul>
+                  <li>
+                    <a href="https://www.apollohospitals.com" target="_blank"
+                      >Apollo Hospitals</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.fortishealthcare.com" target="_blank"
+                      >Fortis Healthcare</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.miotinternational.com" target="_blank"
+                      >MIOT International</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Company Collaborations -->
+    <!doctype html>
+    <html>
+      <head>
+        <style>
+          .card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+          }
+          .card-header {
+            background-color: #ffc107;
+            color: #000;
+            padding: 1rem;
+          }
+          .card-body {
+            padding: 1rem;
+          }
+          .table {
+            width: 100%;
+            border-collapse: collapse;
+          }
+          .table th,
+          .table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+          }
+          .table-hover tbody tr:hover {
+            background-color: #f5f5f5;
+          }
+          .table-responsive {
+            overflow-x: auto;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="card">
+          <div class="card-header">
+            <h3>Featured Company Partnerships</h3>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Company</th>
+                    <th>Program Type</th>
+                    <th>Opportunities</th>
+                    <th>Eligibility</th>
+                    <th>Contact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>TCS</td>
+                    <td>Youth Employment Program</td>
+                    <td>Software Development, Digital Marketing</td>
+                    <td>BE/BTech, Any Degree with 60%</td>
+                    <td>
+                      <a href="mailto:tcs.careers@tcs.com"
+                        >tcs.careers@tcs.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Hyundai</td>
+                    <td>Technical Training Program</td>
+                    <td>Manufacturing, Quality Control</td>
+                    <td>ITI, Diploma in Mechanical</td>
+                    <td>
+                      <a href="mailto:careers@hmil.net">careers@hmil.net</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TVS Motor Company</td>
+                    <td>Skill Development Initiative</td>
+                    <td>Automotive Training, Service Management</td>
+                    <td>10th Pass, ITI, Diploma</td>
+                    <td>
+                      <a href="mailto:careers@tvsmotor.com"
+                        >careers@tvsmotor.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Cognizant</td>
+                    <td>Digital Skills Program</td>
+                    <td>IT Services, Cloud Computing</td>
+                    <td>BE/BTech, MCA, Any Degree with 60%</td>
+                    <td>
+                      <a href="mailto:careers@cognizant.com"
+                        >careers@cognizant.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Saint-Gobain</td>
+                    <td>Industrial Training Program</td>
+                    <td>Manufacturing, Quality Assurance</td>
+                    <td>Diploma in Engineering, ITI</td>
+                    <td>
+                      <a href="mailto:hr.india@saint-gobain.com"
+                        >hr.india@saint-gobain.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Daimler India</td>
+                    <td>Apprenticeship Program</td>
+                    <td>Commercial Vehicle Manufacturing</td>
+                    <td>ITI, Diploma in Mechanical/Automobile</td>
+                    <td>
+                      <a href="mailto:careers.dici@daimler.com"
+                        >careers.dici@daimler.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Jabil</td>
+                    <td>Manufacturing Expansion</td>
+                    <td>Electronics Manufacturing</td>
+                    <td>
+                      Diploma or Degree in Electronics/Mechanical Engineering
+                    </td>
+                    <td>
+                      <a href="mailto:careers@jabil.com">careers@jabil.com</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Rockwell Automation</td>
+                    <td>Automation Training Program</td>
+                    <td>Industrial Automation, Control Systems</td>
+                    <td>BE/BTech in Electrical/Electronics Engineering</td>
+                    <td>
+                      <a href="mailto:careers@rockwellautomation.com"
+                        >careers@rockwellautomation.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IndoSpace</td>
+                    <td>Logistics and Warehousing Development</td>
+                    <td>Warehouse Management, Supply Chain Logistics</td>
+                    <td>Any Degree with relevant experience</td>
+                    <td>
+                      <a href="mailto:hr@indospace.in">hr@indospace.in</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Foxconn</td>
+                    <td>Electronics Manufacturing Training</td>
+                    <td>Assembly Line Operations, Quality Control</td>
+                    <td>ITI, Diploma in Electronics</td>
+                    <td>
+                      <a href="mailto:recruitment@foxconn.com"
+                        >recruitment@foxconn.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Corning</td>
+                    <td>Glass Manufacturing Program</td>
+                    <td>Production, Process Engineering</td>
+                    <td>BE/BTech in Mechanical/Chemical Engineering</td>
+                    <td>
+                      <a href="mailto:careers@corning.com"
+                        >careers@corning.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Ford</td>
+                    <td>Automotive Apprenticeship Program</td>
+                    <td>Vehicle Assembly, Maintenance</td>
+                    <td>ITI, Diploma in Automobile Engineering</td>
+                    <td>
+                      <a href="mailto:careers@ford.com">careers@ford.com</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+
+    <!-- Training Provider Search Section -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Training Provider Search</h3>
+        <p style="margin: 0">
+          Find Approved Training Centers Across Tamil Nadu
+        </p>
+      </div>
+      <div class="card-body">
+        <form id="searchForm">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="district" class="form-label">District</label>
+              <select class="form-select" id="district" name="district">
+                <option value="">Select District</option>
+                <option value="ariyalur">Ariyalur</option>
+                <option value="chennai">Chennai</option>
+                <option value="coimbatore">Coimbatore</option>
+                <option value="cuddalore">Cuddalore</option>
+                <option value="dharmapuri">Dharmapuri</option>
+                <option value="dindigul">Dindigul</option>
+                <option value="erode">Erode</option>
+                <option value="kallakurichi">Kallakurichi</option>
+                <option value="kanchipuram">Kanchipuram</option>
+                <option value="kanniyakumari">Kanniyakumari</option>
+                <option value="karur">Karur</option>
+                <option value="krishnagiri">Krishnagiri</option>
+                <option value="madurai">Madurai</option>
+                <option value="namakkal">Namakkal</option>
+                <option value="perambalur">Perambalur</option>
+                <option value="pudukkottai">Pudukkottai</option>
+                <option value="ramanathapuram">Ramanathapuram</option>
+                <option value="ranipet">Ranipet</option>
+                <option value="salem">Salem</option>
+                <option value="sivaganga">Sivaganga</option>
+                <option value="tenkasi">Tenkasi</option>
+                <option value="thanjavur">Thanjavur</option>
+                <option value="thiruvallur">Thiruvallur</option>
+                <option value="thiruvarur">Thiruvarur</option>
+                <option value="tirunelveli">Tirunelveli</option>
+                <option value="tirupathur">Tirupathur</option>
+                <option value="tiruppur">Tiruppur</option>
+                <option value="tiruvannamalai">Tiruvannamalai</option>
+                <option value="trichy">Trichy</option>
+                <option value="tuticorin">Tuticorin</option>
+                <option value="vellore">Vellore</option>
+                <option value="villupuram">Villupuram</option>
+                <option value="virudhunagar">Virudhunagar</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="sector" class="form-label">Sector</label>
+              <select class="form-select" id="sector" name="sector">
+                <option value="">Select Sector</option>
+                <option value="education">Education</option>
+                <option value="government">Government</option>
+                <option value="government-sector">Government Sector</option>
+                <option value="hospitality">Hospitality</option>
+                <option value="non-profit">Non-Profit</option>
+                <option value="private-sector">Private Sector</option>
+                <option value="public-sector">Public Sector</option>
+                <option value="research">Research</option>
+                <option value="vocational-training">Vocational Training</option>
+              </select>
+            </div>
+            <div class="col-12 mt-3">
+              <button type="submit" class="btn btn-primary">
+                Search Training Providers
+              </button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+          </div>
+        </form>
+
+        <div id="searchResults" class="mt-4">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Contact Person</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                  <th>Address</th>
+                  <th>District</th>
+                  <th>Sector</th>
+                </tr>
+              </thead>
+              <tbody id="resultsBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchForm = document.getElementById("searchForm");
+        const resultsBody = document.getElementById("resultsBody");
+        const districtSelect = document.getElementById("district");
+        const sectorSelect = document.getElementById("sector");
+
+        // Corrected Data Structure
+        const trainingCenters = [
+          {
+            name: "MUTHURAJA EDUCATIONAL SOCIETY",
+            contact_person: "Muthukumarasamy",
+            phone: "9487977741",
+            email: "muthurajango@gmail.com",
+            address:
+              "S.NO 28/8 -31/5 ,IMMACULTE COLLEGE, CHINNAKNGNANKUPPM VILLAGE ,PERIYAGANGANKUPPAM, PANCHAYT ,CUDDALORE 607006",
+            district: "Cuddalore",
+            sector: "Education",
+          },
+          {
+            name: "MUTHAL THALAIMURAI TRUST",
+            contact_person: "shiyamala sivakumar",
+            phone: "9344447132",
+            email: "mttaari2021@gmail.com",
+            address: "8th main road, Kannaginagar, okkiyam thuraipakkam",
+            district: "Chennai",
+            sector: "Non-Profit",
+          },
+          {
+            name: "THE SALEM POLYTECHNIC COLLEGE",
+            contact_person: "A BENJAMIN",
+            phone: "9894272984",
+            email: "benjaminantonysamy1971@gmail.com",
+            address: "GAJJALNAICKENPATTY",
+            district: "Salem",
+            sector: "Education",
+          },
+          {
+            name: "APVK INFRA PRIVATE LIMITED",
+            contact_person: "A NADHIYA",
+            phone: "9751388333",
+            email: "vijayageethamfoundation2021@gmail.com",
+            address:
+              "TJS NAGAR, PERUVOYAL VILLAGE, KAVARAIPETTAI, GUMMIDIPOONDI",
+            district: "Thiruvallur",
+            sector: "Private Sector",
+          },
+          {
+            name: "GOVERNMENT ITI ALATHUR",
+            contact_person: "A.S.Priyadharshini",
+            phone: "9499055883",
+            email: "govtitialathur@gmail.com",
+            address:
+              "GOVT ITI ALATHUR,MGR NAGAR,MARUTHADI ROAD,NARANAMANGALAM,ALATHUR(TK),PERAMBALUR(DT)",
+            district: "Perambalur",
+            sector: "Vocational Training",
+          },
+          {
+            name: "INFONET COMM ENTERPRISES PVT LTD",
+            contact_person: "Afrin",
+            phone: "9025259324",
+            email: "afrinafrinaffu@gmail.com",
+            address:
+              "No. 2, Thai Complex, katheri road, Bust stand Opp, kallkurichi, 606202",
+            district: "Kallakurichi",
+            sector: "Private Sector",
+          },
+          {
+            name: "JOSE AND JENICE MULTITECH PRIVATE LIMITED",
+            contact_person: "Ajay K",
+            phone: "8925359531",
+            email: "jjmpltnuhdbteynampet@gmail.com",
+            address:
+              "Community Hall, Nandhanam, ( Opposite A Block, near Rain Tree Restaurant), Chennai",
+            district: "Chennai",
+            sector: "Private Sector",
+          },
+          {
+            name: "GOVT POLYTECHNIC COLLEGE",
+            contact_person: "Akila K B",
+            phone: "9600422970",
+            email: "spoc.njmp.135gptc@gmail.com",
+            address: "PAINKINAR VILLAGE, CHEYYAR-604 407",
+            district: "Tiruvannamalai",
+            sector: "Education",
+          },
+          {
+            name: "GOVERNMENT POLYTECHNIC COLLEGE MOHANUR",
+            contact_person: "AKILAN ADIMOOLAM",
+            phone: "9443828202",
+            email: "tnsdc@gptcmohanur.com",
+            address: "GOVERNMENT POLYTECHNIC COLLEGE, PETTAPALAYAM MOHANUR",
+            district: "Namakkal",
+            sector: "Education",
+          },
+          {
+            name: "ANNAI VELANKANNI POLYTECHNIC COLLEGE",
+            contact_person: "AMALORPAVAM",
+            phone: "9442315109",
+            email: "amalaavptc@gmail.com",
+            address:
+              "SALEM MAIN ROAD, ANGUCHETTYPALAYAM SIRUVATHUR POST PANRUTI TALUK",
+            district: "Cuddalore",
+            sector: "Education",
+          },
+          {
+            name: "GOVT ITI VADAKARAI",
+            contact_person: "AMARNATH C",
+            phone: "9499055670",
+            email: "govtadwiti@gmail.com",
+            address:
+              "THE PRINCIPAL GOVT ITI (ADW) VADAKARAI REDHILLS CHENNAI 52",
+            district: "Thiruvallur",
+            sector: "Vocational Training",
+          },
+          {
+            name: "MODERN POLYTECHNIC COLLEGE",
+            contact_person: "AMULRAJ MAHALINGAM",
+            phone: "9025733795",
+            email: "amulrajmech3@gmail.com",
+            address:
+              "MODERN POLYTECHNIC COLLEGE, VIRUDHACHALAM MAIN ROAD, MAHIMAIPURAM, JAYANKONDAM, ARIYALUR (DT) - 621802",
+            district: "Ariyalur",
+            sector: "Education",
+          },
+          {
+            name: "JEYACHANDRAN INDUSTRIES PRIVATE LIMITED",
+            contact_person: "Anikumar Bhuvanendiran Nair",
+            phone: "9833781963",
+            email: "punithagibson@theramachandran.com",
+            address:
+              "4/1965, 4/1966, Ganapathi Nagar, Sumaitheernthapuram Panchayat, Shenkottai",
+            district: "Tenkasi",
+            sector: "Private Sector",
+          },
+          {
+            name: "CHIEF ENGINEER AGRICULTURAL ENGINEERING DEPARTMENT",
+            contact_person: "aravindan singaram",
+            phone: "9442870506",
+            email: "aravindanje@gmail.com",
+            address:
+              "O/o.Assistant Executive Engineer(AE), Agricultural Implements Workshop, No.2/104, Kumbakonam Main Road, Pavithiramanickam, Manakkal, Ayyampettai, Elavangarkudi Post, Thiruvarur",
+            district: "Thiruvarur",
+            sector: "Government",
+          },
+          {
+            name: "SRI SATHIYA SAI EDUCATIONAL AND CHARITABLE TRUST",
+            contact_person: "Archana Murali",
+            phone: "8778845143",
+            email: "nscvetskillindia@gmail.com",
+            address: "NO.27,PERIYAMPATTI,KARIMANGALAM TALUCK,DHARMAPURI",
+            district: "Dharmapuri",
+            sector: "Non-Profit",
+          },
+          {
+            name: "ST JOSEPH'S POLYTECHNIC COLLEGE",
+            contact_person: "Arockia Dass J",
+            phone: "9003438782",
+            email: "dmedass@gmail.com",
+            address:
+              "St.JOSEPH 'S POLYTECHNIC COLLEGE, PAPPU NAGAR, RMTC NAGAR, REDDIYAPATTI (PO) DINDIGUL",
+            district: "Dindigul",
+            sector: "Education",
+          },
+          {
+            name: "INFONET COMM ENTERPRISES PVT LTD",
+            contact_person: "ARTHI NATARAJAN",
+            phone: "6374851153",
+            email: "apollogudiyattam@gmail.com",
+            address: "No:3/1,Anna Street,Ambapuram,Gudiyattam 632602",
+            district: "Vellore",
+            sector: "Private Sector",
+          },
+          {
+            name: "GOVT INDUSTRIAL TRAINING INSTITUTE TIRUCHENDUR",
+            contact_person: "ARUL SESHAIYAN",
+            phone: "9499055812",
+            email: "govtititcr@gmail.com",
+            address:
+              "GOVT INDUSTRIAL TRAINING INSTITUTE TIRUCHENDUR @ VEERAPANDIANPATTINAM",
+            district: "Tuticorin",
+            sector: "Vocational Training",
+          },
+          {
+            name: "SOUTH INDIA HOTELS AND RESTAURANTS ASSOCIATION",
+            contact_person: "Arulmurugan Ramasamy",
+            phone: "8667010279",
+            email: "info@sihra.in",
+            address: "sf no 584/1, Ward no 16, 18 Masthan Road, Manapparai",
+            district: "Tiruchirappalli",
+            sector: "Hospitality",
+          },
+          {
+            name: "MUTHIAH POLYTECHNIC COLLEGE",
+            contact_person: "Arumainathan F",
+            phone: "8056263922",
+            email: "arumainathan67@gmail.com",
+            address: "Annamalainagar, Chidambaram R S 608002.",
+            district: "Cuddalore",
+            sector: "Education",
+          },
+          {
+            name: "VANIYAMBADI MULTI SKILL DEVELOPMENT CENTRE",
+            contact_person: "Arumugam",
+            phone: "9894796395",
+            email: "aarumugamvenmani2023@gmail.com",
+            address:
+              "VPRC Building, Venmaniyathur Village, Tindivanam Tk, Villupuram Dt",
+            district: "Villupuram",
+            sector: "Vocational Training",
+          },
+          {
+            name: "ALAGAPPA GOVERNMENT POLYTECHNIC COLLEGE",
+            contact_person: "ARUN PANDIYAN R",
+            phone: "8675669030",
+            email: "arun.pandiyanr27@gmail.com",
+            address:
+              "ALAGAPPA GOVERNMENT POLYTECHNIC COLLEGE, COLLEGE ROAD, KARAIKUDI",
+            district: "Sivaganga",
+            sector: "Education",
+          },
+          {
+            name: "THE SOUTH INDIA TEXTILE RESEARCH ASSOCIATION",
+            contact_person: "Arun Prasanth",
+            phone: "9360793923",
+            email: "arun.subbaiyyan@gmail.com",
+            address: "K G Denim Limited, Then Thirumalai, Mettupalayam",
+            district: "Coimbatore",
+            sector: "Research",
+          },
+          {
+            name: "THE SOUTH INDIA TEXTILE RESEARCH ASSOCIATION",
+            contact_person: "ARUNA DEVI VETRIVELAN",
+            phone: "7708252003",
+            email: "hr@saaindia.com",
+            address:
+              "S A AAnandan Mill Limited, 100, Srivilliputhur Road, Padikasuvaithanpatti village, mamsapuram P O",
+            district: "Virudhunagar",
+            sector: "Research",
+          },
+          {
+            name: "GOVERNMENT POLYTECHNIC COLLEGE ARIYALUR",
+            contact_person: "Arunkumar",
+            phone: "9842430733",
+            email: "arunlkarun@gmail.com",
+            address:
+              "Government Polytechnic College, Keelapalur-Post, Ariyalur-Dist",
+            district: "Ariyalur",
+            sector: "Education",
+          },
+          {
+            name: "ADYAR ANANDA BHAVAN SWEETS INDIA PRIVATE LIMITED",
+            contact_person: "Asharuf Ali M",
+            phone: "9791110665",
+            email: "sd.operations@aabsweets.in",
+            address:
+              "NO.55, 2nd Sector, 3rd Street, Ambattur Industrial Estate, Ambattur, Chennai",
+            district: "Chennai",
+            sector: "Private Sector",
+          },
+          {
+            name: "NACHIMUTHU POLYTECHNIC COLLEGE",
+            contact_person: "ASHOK MADAVAN",
+            phone: "9688819424",
+            email: "principal@nptc.ac.in",
+            address:
+              "NACHIMUTHU POLYTECHNIC COLLEGE, UDUMALAI ROAD, MAKKINAMPATTI - POST, POLLACHI",
+            district: "Coimbatore",
+            sector: "Education",
+          },
+          {
+            name: "GOVERNMENT ITI CHEKKANURANI",
+            contact_person: "Asokan M",
+            phone: "9952790201",
+            email: "mvelasokan@gmail.com",
+            address:
+              "GOVERNMENT ITI CHEKKANURANI, THENI ROADE, THIRUMANGALAM, MADURAI",
+            district: "Madurai",
+            sector: "Vocational Training",
+          },
+          {
+            name: "BLOSSOM ACADEMY",
+            contact_person: "Avudaiammal",
+            phone: "9445868780",
+            email: "blossomacademy2@gmail.com",
+            address: "DR AMBEDKAR TUTION CENTRE, SIVALINGAPURAM",
+            district: "Chennai",
+            sector: "Education",
+          },
+          {
+            name: "SRI AYYAPPA POLYTECHNIC COLLEGE",
+            contact_person: "Ayyanar Balasubramaniyan",
+            phone: "8668083952",
+            email: "principal_526@yahoo.co.in",
+            address: "AIVADHUKUDI-ERANJI-POST-CUDDALORE-DISTRICT.",
+            district: "Cuddalore",
+            sector: "Education",
+          },
+          {
+            name: "GOVERNMENT POLYTECHNIC COLLEGE KANIYALAMPATTY",
+            contact_person: "B KOKILA",
+            phone: "7708073643",
+            email: "kokilace.krishnan@gmail.com",
+            address:
+              "THE PRINCIPAL, GOVERNMENT, POLYTECHNIC COLLEGE, KANIYALAMPATTI , KARUR",
+            district: "Karur",
+            sector: "Education",
+          },
+          {
+            name: "PALANIVELU ITI",
+            contact_person: "Bakkiyalatha",
+            phone: "9500412019",
+            email: "vgurusparllll@gmail.com",
+            address:
+              "Tiruvannamalai Main Road, Kandachipuram, Irudayapuram Rd, Tamil Nadu 605701",
+            district: "Villupuram",
+            sector: "Vocational Training",
+          },
+          {
+            name: "ARULMURUGAN POLYTECHNIC COLLEGE",
+            contact_person: "BALACHANDAR SANKAR",
+            phone: "9944597996",
+            email: "sankarbalachandar@gmail.com",
+            address:
+              "ARULMURUGAN POLYTECHNIC COLLEGE, THENNILAI, PUGALUR TALUK, KARUR-639206",
+            district: "Karur",
+            sector: "Education",
+          },
+          {
+            name: "TIRUMALA POLYTECHNIC COLLEGE",
+            contact_person: "Balaji Perumal",
+            phone: "8248757906",
+            email: "perumalbalaji18@gmail.com",
+            address: "Nallapillaipetral Pallikondapattu(PO) Tiruvannamalai",
+            district: "Tiruvannamalai",
+            sector: "Education",
+          },
+          {
+            name: "GOVT ITI THIRUVAIYARU",
+            contact_person: "Balasaraswathi Mohan",
+            phone: "9499055730",
+            email: "prlgititvr@gmail.com",
+            address: "Kaduveli, Thiruvaiyaru",
+            district: "Thanjavur",
+            sector: "Vocational Training",
+          },
+          {
+            name: "GOVERNMENT POLYTECHNIC COLLEGE NAGAPADI THIRUVANNAMALAI",
+            contact_person: "Balasubramanian",
+            phone: "7904692373",
+            email: "karthikasi123@gmail.com",
+            address: "127, GOVERNMENT POLYTECHNIC COLLEGE,",
+            district: "Tiruvannamalai",
+            sector: "Education",
+          },
+          {
+            name: "GOVT ITI KOTTUR",
+            contact_person: "BASKARAN RAMASAMY",
+            phone: "9842093837",
+            email: "baskaran66iti@gmail.com",
+            address:
+              "25, MAIN ROAD, THATTANKOVIL MALAVARAYANALLUR (VILLAGE), MANNARGUDI(TK), THIRUVARUR(DT)",
+            district: "Thiruvarur",
+            sector: "Vocational Training",
+          },
+          {
+            name: "LOYOLA PVT ITI",
+            contact_person: "Berkmans. Kasparaj",
+            phone: "9698964011",
+            email: "berksj@gmail.com",
+            address: "PO BOX NO.6, 1/1074 A SOUTH RAILWAY STATION,PALAR ROAD,",
+            district: "Ranipet",
+            sector: "Vocational Training",
+          },
+          {
+            name: "RURAL EDUCATION AND ENVIRONMENT PROTECTION TRUST REEP TRUST",
+            contact_person: "BHARATHKUMAR SHANMUGAM",
+            phone: "9942833759",
+            email: "reep.pudukkottai@gmail.com",
+            address:
+              "NO 5623 SOUTH 4TH STREET NEAR TO TRICHY BUILDING MATERIALS OPP TO PUDHUMAI SUPER MARKET PUDUKKOTTAI-622001",
+            district: "Pudukkottai",
+            sector: "Non-Profit",
+          },
+          {
+            name: "C M ANNAMALAI POLYTECHNIC COLLEGE",
+            contact_person: "BOOPATHY RANGANATHAN",
+            phone: "9943644524",
+            email: "cmapc2009@gmail.com",
+            address:
+              "Sholinghur To Tiruttani HighRoad, Vellathur Village, Adhivaragapuram Post",
+            district: "Thiruvallur",
+            sector: "Education",
+          },
+          {
+            name: "SRI MUTHALAMMAN POLYTECHNIC COLLEGE",
+            contact_person: "BRITTO BEBIOLA",
+            phone: "9842442514",
+            email: "judefebi123@yahoo.co.in",
+            address: "SOMANATHAPURAM THELICHATHANALLUR POST PARAMAKUDI TALUK",
+            district: "Ramanathapuram",
+            sector: "Education",
+          },
+          {
+            name: "BLOSSOM ACADEMY",
+            contact_person: "Chandra Kumar R",
+            phone: "9445868781",
+            email: "Blossomacademy.tnuhdb@gmail.com",
+            address:
+              "TNUHDB - AIRLAND COMMUNITY HALL , NO 1, AIR NAGAR ROAD, TNSCB, KASI VISALAKSHI KUPPAM, ENNORE",
+            district: "Chennai",
+            sector: "Education",
+          },
+          {
+            name: "SANKAR POLYTECHNIC COLLEGE SANKAR NAGAR",
+            contact_person: "Chellappa S",
+            phone: "9442130116",
+            email: "pschellappa67@gmail.com",
+            address: "SANKAR POLYTECHNIC COLLEGE (AUTONOMOUS), SANKAR NAGAR",
+            district: "Tirunelveli",
+            sector: "Education",
+          },
+          {
+            name: "GOVERNMENT INDUSTRIAL TRAINING INSTITUTE AMBATTUR",
+            contact_person: "Chezhian Subramanian",
+            phone: "9444496306",
+            email: "chezhi16@gmail.com",
+            address:
+              "563/A, MTH Road, Industrial Estate Ambattur, Chennai-600098.",
+            district: "Thiruvallur",
+            sector: "Vocational Training",
+          },
+          {
+            name: "GOVERNMENT POLYTECHNIC COLLEGE D.R.R.K NAGAR",
+            contact_person: "Chindhamani V",
+            phone: "6382406850",
+            email: "chindhamani100@gmail.com",
+            address: "Kamarajar salai, Tondiarpet,chennai",
+            district: "Chennai",
+            sector: "Education",
+          },
+          {
+            name: "GPTCVANAVASI",
+            contact_person: "CHITRA SELVAM",
+            phone: "8870918749",
+            email: "chitraselvam1@gmail.com",
+            address: "THARAMANGALAM MAIN ROAD, VANAVASI",
+            district: "Salem",
+            sector: "Education",
+          },
+          {
+            name: "THE APPAREL TRAINING & DESIGN CENTRE",
+            contact_person: "D Shanthi",
+            phone: "9944501050",
+            email: "atdcattipattu@gmail.com",
+            address:
+              "Community Hall, Attipattu TNUHDB Tenemental Scheme (Phase III), Chennai - 600053",
+            district: "Chennai",
+            sector: "Vocational Training",
+          },
+          {
+            name: "BOSCH LIMITED",
+            contact_person: "Damiyan Amalraj",
+            phone: "9789332428",
+            email: "damiyan.amalraj@in.bosch.com",
+            address:
+              "No.651, SIPCOT Industrial Growth Centre, Gangaikondan Village, Tirunelveli",
+            district: "Tirunelveli",
+            sector: "Private Sector",
+          },
+          {
+            name: "JOSE AND JENICE MULTITECH PRIVATE LIMITED",
+            contact_person: "Davina Austin Charles",
+            phone: "6369546561",
+            email: "jjmpltnuhdbrediyarpatti@gmail.com",
+            address: "12, Reddiarpatti, Tirunelveli",
+            district: "Tirunelveli",
+            sector: "Private Sector",
+          },
+          {
+            name: "T J SIVANANDA MUDALIAR EDUCATIONAL TRUST",
+            contact_person: "DEEPA PRIYA L",
+            phone: "9894411144",
+            email: "jailagarbatti@gmail.com",
+            address: "COMMUNITY HALL,THILAGAR NAGAR, THONDIARPET",
+            district: "Chennai",
+            sector: "Non-Profit",
+          },
+          {
+            name: "SHRI KRISHNAA POLYTECHNIC COLLEGE",
+            contact_person: "DEEPAKKUMAR RAJACHETTY",
+            phone: "8778672123",
+            email: "deepak22eee@gmail.com",
+            address:
+              "R Gopinathampatti , Morappur -Via, Harur - Tk , Dharmapuri - Dt",
+            district: "Dharmapuri",
+            sector: "Education",
+          },
+          {
+            name: "THE APPAREL TRAINING & DESIGN CENTRE",
+            contact_person: "Deepalakshmi",
+            phone: "9940219166",
+            email: "atdcairland@gmail.com",
+            address:
+              "Block 68, All India Radio Housing Board, Kasi Visalakshi Kuppam, Ennore, Chennai - 600057",
+            district: "Chennai",
+            sector: "Vocational Training",
+          },
+          {
+            name: "SRI VISWESWARA PRIVATE ITI",
+            contact_person: "DEVADOSS KALIYAMOORTHI",
+            phone: "6381341811",
+            email: "umaraniramesh03@gmail.com",
+            address: "PAMANI,MANNARGUDI",
+            district: "Thiruvarur",
+            sector: "Vocational Training",
+          },
+          {
+            name: "DUSI POLYTECHNIC COLLEGE",
+            contact_person: "DHANAKUMAR T",
+            phone: "9043939022",
+            email: "561dusipolytechnic@gmail.com",
+            address: "561 DUSI POLYTECHNIC COLLEGE",
+            district: "Tiruvannamalai",
+            sector: "Education",
+          },
+          {
+            name: "LAXMINARAYANA POLYTECHNIC COLLEGE",
+            contact_person: "DHANDAPANI KASI",
+            phone: "9994517123",
+            email: "lnp542@gmail.com",
+            address: "SAVULUR, PAGALAHALLI POST, NALLAMPALLI TALUK, DHARMAPURI",
+            district: "Dharmapuri",
+            sector: "Education",
+          },
+          {
+            name: "BHAKTAVATSALAM POLYTECHNIC COLLEGE",
+            contact_person: "Dharmalingam palanivel",
+            phone: "9443827527",
+            email: "dharmalingap@gmail.com",
+            address:
+              "Bhaktavatsalam Polytechnic College , karapetai , kanchipuram",
+            district: "Kanchipuram",
+            sector: "Education",
+          },
+          {
+            name: "N V POLYTECHNIC COLLEGE",
+            contact_person: "DHARMARAJ N",
+            phone: "9750903402",
+            email: "nvpolytechnic@gmail.com",
+            address: "SOMAVARAPATTY PETHAPPAMPATTY",
+            district: "Tiruppur",
+            sector: "Education",
+          },
+          {
+            name: "VANIYAMBADI MULTI SKILL DEVELOPMENT CENTRE",
+            contact_person: "Dharumarajan K",
+            phone: "8124591002",
+            email: "Dharumarajank@gmail.com",
+            address: "VPRC Building, Gollakuppam, Madhanur, Ambur, Tirupathur",
+            district: "Tirupathur",
+            sector: "Vocational Training",
+          },
+          {
+            name: "GOVT ITI RAMANATHAPURAM",
+            contact_person: "Dhiravidamani Maruthaiah",
+            phone: "9677067616",
+            email: "principalramnadtnsdc@gmail.com",
+            address:
+              "1350,rameshwaram Main Road,near Collectrate Ramanathapuram",
+            district: "Ramanathapuram",
+            sector: "Vocational Training",
+          },
+          {
+            name: "GOVERNMENT ITI COIMBATORE",
+            contact_person: "Dinesh Mohan",
+            phone: "9894345920",
+            email: "mechaucbe@gmail.com",
+            address: "METTUPALAYAM ROAD, G N MILLS POST",
+            district: "Coimbatore",
+            sector: "Vocational Training",
+          },
+          {
+            name: "INFONET COMM ENTERPRISES PVT LTD",
+            contact_person: "Divainiya Brintha J R",
+            phone: "9789255582",
+            email: "info.nationalcollegetvl@gmail.com",
+            address: "1008, Asia Tower,3rd Floor, Palayankottai, Tirunelveli",
+            district: "Tirunelveli",
+            sector: "Private Sector",
+          },
+          {
+            name: "SRI MUTHIAH MEMORIAL TRUST",
+            contact_person: "DIVYA VIJAYAN",
+            phone: "9941538856",
+            email: "SMMTSKILL@GMAIL.COM",
+            address:
+              "TNUHDB - Community Hall, S M Nagar, A to J block, Nandhanam, Near Rain tree Restaurant, Teynampet, Chennai",
+            district: "Chennai",
+            sector: "Non-Profit",
+          },
+          {
+            name: "ARASAN GANESAN POLYTECHNIC COLLEGE",
+            contact_person: "DURAIRAJ SHANMUGANATHAN",
+            phone: "9245163306",
+            email: "dsn239300@gmail.com",
+            address:
+              "VIRUDHUNAGAR MAIN ROAD, ANAIKUTT POST, THIRUTHANGAL VIA, SIVAKASI",
+            district: "Virudhunagar",
+            sector: "Education",
+          },
+          {
+            name: "TIRUPUR THOZHIL PATHUKAPPU KULU",
+            contact_person: "DURAISAMY PALANIGOUNDER",
+            phone: "8122948328",
+            email: "gvtapes@rediffmail.com",
+            address:
+              "4/32 F, Opposite Anbu Illam, Vivekananthar Nagar Tirumuruganpoondi (PO) Tirupur",
+            district: "Tiruppur",
+            sector: "Non-Profit",
+          },
+          {
+            name: "GOVT ITI NAGALAPURAM",
+            contact_person: "E Mani",
+            phone: "9791831381",
+            email: "umarupulavartnsdc2023@gmail.com",
+            address:
+              "Principal, Umarupulavar Govt ITI Nagalapuram, Goundanpatti Panchayat, Nagalapuram, Vilathikulam, Thoothukudi",
+            district: "Tuticorin",
+            sector: "Vocational Training",
+          },
+          {
+            name: "GOVERNMENT POLYTECHNIC COLLEGE KELAMANGALAM",
+            contact_person: "ELAHI SYED HANEEF",
+            phone: "7397188112",
+            email: "142gptcklmexamcell@gmail.com",
+            address:
+              "Government Polytechnic College Opposite to Model School, Bodichipalli(Post) Kelamangalam- 635113. Krishnagiri (Dt)",
+            district: "Krishnagiri",
+            sector: "Education",
+          },
+          {
+            name: "GOVERNMENT INDUSTRIAL TRAINING INSTITUTE DHARMAPURI",
+            contact_person: "Elangovan Mahalingam",
+            phone: "9499055840",
+            email: "govt.iti.dpi@gmail.com",
+            address:
+              "PRINCIPAL , GOVERNMENT INDUSTRIAL TRAINING INSTITUTE , DHARMAPURI , KADAGATHUR VILLAGE , SELLIYAMPATTI POST,PAPPARAPATTI VIA, DHARMAPURI DISTRICT , TAMILNADU STATE",
+            district: "Dharmapuri",
+            sector: "Vocational Training",
+          },
+          {
+            name: "VENKATESVARA POLYTECHNIC COLLEGE",
+            contact_person: "ELANKHAVEE S",
+            phone: "8524019096",
+            email: "elankhavee007@gmail.com",
+            address: "Aranthangi Road, Kaikkurichi",
+            district: "Pudukkottai",
+            sector: "Education",
+          },
+          {
+            name: "INFONET COMM ENTERPRISES PVT LTD",
+            contact_person: "Franklin Ramaiyan",
+            phone: "9488521105",
+            email: "kecttrust@gmail.com",
+            address:
+              "21-15/6 Kalladimamoodu Junction,Cherupaloor,Kulasekharam,Kanniyakumari",
+            district: "Kanniyakumari",
+            sector: "Private Sector",
+          },
+          {
+            name: "GOVERNMENT POLYTECHNIC COLEGE PALACODE",
+            contact_person: "G Priya",
+            phone: "9791528617",
+            email: "sivapriyasalem@gmail.com",
+            address:
+              "Government Polytechnic College (Sugar Mill Campus), Jerthalav post, Palacode, Dharmapuri",
+            district: "Dharmapuri",
+            sector: "Education",
+          },
+          {
+            name: "PATTUKKOTTAI POLYTECHNIC COLLEGE",
+            contact_person: "G RAMESH",
+            phone: "8754645197",
+            email: "rameshgd777@gmail.com",
+            address:
+              "PATTUKKOTTAI POLYTECHNIC COLLEGE,SANTHANGADU VILLAGE,PALAYAM,PATTUKKOTTAI",
+            district: "Thanjavur",
+            sector: "Education",
+          },
+          {
+            name: "CHITHIRAM CAREER CENTER",
+            contact_person: "G Sangeetha",
+            phone: "9566511826",
+            email: "chithiramccspoc@gmail.com",
+            address:
+              "No 138, Rajiv Gandhi Nagar, Villivakkam, Sri Kanaga Durga school campus, Annex Building, Chennai - 600049.",
+            district: "Chennai",
+            sector: "Education",
+          },
+          {
+            name: "TAMILNADU GOVERNMENT POLTECHNIC COLLEGE MADURAI",
+            contact_person: "Gajalakshmi",
+            phone: "9787868802",
+            email: "gajakannan79@gmail.com",
+            address: "TPK Road",
+            district: "Madurai",
+            sector: "Education",
+          },
+          {
+            name: "GOVT ITI ERODE",
+            contact_person: "Ganesan E",
+            phone: "9443411485",
+            email: "erodetnsdc@gmail.com",
+            address: "THE PRINCIPAL, GOVT ITI, KASIPALAYAM(POST)ERODE - 638009",
+            district: "Erode",
+            sector: "Vocational Training",
+          },
+          {
+            name: "TVS TRAINING AND SERVICES LIMITED",
+            contact_person: "Ganesh P",
+            phone: "8925505235",
+            email: "coordinator@tvsts.com",
+            address:
+              "Er. Perumal Manimekalai College of Engineering Campus, Hosur to Krishnagiri Highways, Koneripalli (PO), Hosur, Nallaganakothapalli, Tamil Nadu",
+            district: "Krishnagiri",
+            sector: "Private Sector",
+          },
+          {
+            name: "DONBOSCO PRIVATE ITI",
+            contact_person: "GEORGE J",
+            phone: "9791783584",
+            email: "dbitckvpt@gmail.com",
+            address: "PANPAKKAM (V), KAVARAPETTAI PO, KUMIDIPOONDI",
+            district: "Thiruvallur",
+            sector: "Vocational Training",
+          },
+          {
+            name: "AVON SEALS PRIVATE LIMITED",
+            contact_person: "Gireeshan A N",
+            phone: "9381009070",
+            email: "gireeshan@avonseals.com",
+            address: "G2, 11th street, Ambattur Industrial Estate",
+            district: "Chennai",
+            sector: "Private Sector",
+          },
+          {
+            name: "ST JOSEPH'S PVT ITI TINDIVANAM",
+            contact_person: "GNANASEKAR D",
+            phone: "9095982497",
+            email: "stjosephititdvm@gmail.com",
+            address: "91/40A/5, Marakkanam Road, Tindivanam",
+            district: "Villupuram",
+            sector: "Vocational Training",
+          },
+          {
+            name: "GOVT ITI VEERAKERALAMPUDUR",
+            contact_person: "Gobinath",
+            phone: "7598288731",
+            email: "gobinath1967@gmail.com",
+            address: "1D/9 ALANKULAM -SURANDAI ROAD , VEERAKERALAMPUDUR",
+            district: "Tenkasi",
+            sector: "Vocational Training",
+          },
+          {
+            name: "HOWDEN AIR AND GAS INDIA PRIVATE LIMITED",
+            contact_person: "GOKUL M",
+            phone: "8190071660",
+            email: "gokulvirat23@gmail.com",
+            address:
+              "No.147, Numbal Village, Poonamalle High road, Chennai - 600077",
+            district: "Thiruvallur",
+            sector: "Private Sector",
+          },
+          {
+            name: "HOWDEN AIR AND GAS INDIA PRIVATE LIMITED",
+            contact_person: "GOKUL M",
+            phone: "8190071660",
+            email: "gokulvirat23@gmail.com",
+            address:
+              "No.147, Numbal Village, Poonamalle High road, Chennai - 600077",
+            district: "Thiruvallur",
+            sector: "Private Sector",
+          },
+          {
+            name: "SIEMENS TECHNOLOGY AND SERVICES PRIVATE LIMITED",
+            contact_person: "Rajesh Kumar",
+            phone: "9884526371",
+            email: "training.chennai@siemens.com",
+            address:
+              "138, Old Mahabalipuram Road, Sholinganallur, Chennai - 600119",
+            district: "Chennai",
+            sector: "Private Sector",
+          },
+          {
+            name: "NSIC TECHNICAL SERVICES CENTRE",
+            contact_person: "S. Vijayakumar",
+            phone: "9445869450",
+            email: "ntscchennai@nsic.co.in",
+            address:
+              "Module 17&18, Industrial Estate, Guindy, Chennai - 600032",
+            district: "Chennai",
+            sector: "Government Sector",
+          },
+          {
+            name: "CII INDIAN GREEN BUILDING COUNCIL",
+            contact_person: "Priya Raman",
+            phone: "9840087345",
+            email: "igbc.chennai@cii.in",
+            address: "98/1, Velachery Main Road, Guindy, Chennai - 600032",
+            district: "Chennai",
+            sector: "Private Sector",
+          },
+          {
+            name: "TAMIL NADU SKILL DEVELOPMENT CORPORATION",
+            contact_person: "D. Selvan",
+            phone: "9442156780",
+            email: "tnsdc.chennai@tn.gov.in",
+            address:
+              "Tamil Nadu Skill Development Complex, Guindy Industrial Estate, Chennai - 600032",
+            district: "Chennai",
+            sector: "Government Sector",
+          },
+          {
+            name: "L&T CONSTRUCTION SKILL TRAINING INSTITUTE",
+            contact_person: "Meena Kumari",
+            phone: "9600234567",
+            email: "csti.chennai@larsentoubro.com",
+            address: "L&T Construction Campus, Manapakkam, Chennai - 600125",
+            district: "Chennai",
+            sector: "Private Sector",
+          },
+          {
+            name: "THIAGARAJAR POLYTECHNIC COLLEGE",
+            contact_person: "Gokulkannan Nataraj",
+            phone: "9944881171",
+            email: "n.gokulkannan@gmail.com",
+            address: "POST BOX NO:523 JUNCTION MAIN ROAD",
+            district: "Salem",
+            sector: "Education",
+          },
+          {
+            name: "BHEL CRAFT APPRENTICE TRAINING SCHOOL",
+            contact_person: "Senthil Kumar R",
+            phone: "9442385671",
+            email: "cats.bhel@training.com",
+            address: "BHEL Campus, Tiruverumbur, Tiruchirappalli - 620014",
+            district: "Trichy",
+            sector: "Public Sector",
+          },
+          {
+            name: "NATIONAL INSTITUTE OF TECHNOLOGY - ENTREPRENEURSHIP CELL",
+            contact_person: "Dr. Mathew Joseph",
+            phone: "9865147820",
+            email: "ecell.nitt@nitt.edu",
+            address: "NIT Campus, Thuvakudi, Tiruchirappalli - 620015",
+            district: "Trichy",
+            sector: "Government Sector",
+          },
+          {
+            name: "ORDNANCE FACTORY TRAINING INSTITUTE",
+            contact_person: "Ramesh P",
+            phone: "9442156789",
+            email: "ofti.trichy@ofb.gov.in",
+            address: "OFT Estate, Tiruverumbur, Tiruchirappalli - 620016",
+            district: "Trichy",
+            sector: "Government Sector",
+          },
+          {
+            name: "TRICHY DISTRICT SKILL DEVELOPMENT CENTER",
+            contact_person: "Lakshmi Priya",
+            phone: "9865432109",
+            email: "tdsdc.trichy@tn.gov.in",
+            address:
+              "Collector Office Complex, Bharathiyar Salai, Tiruchirappalli - 620001",
+            district: "Trichy",
+            sector: "Government Sector",
+          },
+          {
+            name: "TAMIL NADU AGRICULTURAL UNIVERSITY - SKILLS CENTER",
+            contact_person: "Dr. Vijayakumar S",
+            phone: "9443216540",
+            email: "tnau.trichy@tnau.ac.in",
+            address:
+              "Agricultural College and Research Institute, Kudimiyanmalai Road, Tiruchirappalli - 620009",
+            district: "Trichy",
+            sector: "Government Sector",
+          },
+          {
+            name: "TRICHY ENGINEERING TRAINING INSTITUTE",
+            contact_person: "Mohammed Rasool",
+            phone: "9842178450",
+            email: "teti.trichy@gmail.com",
+            address:
+              "Chennai Trunk Road, Senthaneerpuram, Tiruchirappalli - 620018",
+            district: "Trichy",
+            sector: "Private Sector",
+          },
+        ];
+
+        // Handle form submission
+        searchForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          const selectedDistrict = districtSelect.value.trim().toLowerCase();
+          const selectedSector = sectorSelect.value.trim().toLowerCase();
+
+          // Filter training providers based on selected district and sector
+          const filteredResults = trainingCenters.filter((tc) => {
+            return (
+              (selectedDistrict
+                ? tc.district.toLowerCase() === selectedDistrict
+                : true) &&
+              (selectedSector
+                ? tc.sector.toLowerCase() === selectedSector
+                : true)
+            );
+          });
+
+          // Display results
+          resultsBody.innerHTML = "";
+          if (filteredResults.length > 0) {
+            filteredResults.forEach((result) => {
+              resultsBody.innerHTML += `
+                                  <tr>
+                                      <td>${result.name}</td>
+                                      <td>${result.contact_person}</td>
+                                      <td>${result.phone}</td>
+                                      <td>${result.email}</td>
+                                      <td>${result.address}</td>
+                                      <td>${result.district}</td>
+                                      <td>${result.sector}</td>
+                                  </tr>
+                              `;
+            });
+          } else {
+            resultsBody.innerHTML =
+              '<tr><td colspan="7" class="text-center">No results found</td></tr>';
+          }
+        });
+
+        // Reset button clears results
+        searchForm.addEventListener("reset", function () {
+          resultsBody.innerHTML = "";
+        });
+      });
+    </script>
+    {% endblock %}
+  </div>
+</div>

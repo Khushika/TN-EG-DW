@@ -1,0 +1,39 @@
+{
+  "employment_stats": {
+    "total_jobs_created": "280,000",
+    "annual_growth": "8.2%",
+    "sectors": {
+      "IT": "35%",
+      "Manufacturing": "28%",
+      "Services": "22%",
+      "Agriculture": "15%"
+    },
+    "employment_by_gender": {
+      "male": "58%",
+      "female": "42%"
+    },
+    "employment_by_area": {
+      "urban": "65%",
+      "rural": "35%"
+    }
+  },
+  "company_stats": {
+    "total_registered": "125,000",
+    "new_registrations": "12,500",
+    "growth_rate": "10.2%",
+    "by_size": {
+      "micro": "45%",
+      "small": "35%",
+      "medium": "20%"
+    },
+    "investment_inflow": "₹75,000 Cr",
+    "export_contribution": "₹1,25,000 Cr"
+  },
+  "skill_development": {
+    "people_trained": "150,000",
+    "placement_rate": "75%",
+    "training_centers": "1,000",
+    "sectors_covered": "25",
+    "certification_rate": "82%"
+  }
+}

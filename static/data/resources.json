@@ -1,0 +1,45 @@
+{
+  "references": [
+    {
+      "name": "UN SDG Official Website",
+      "url": "https://sdgs.un.org/goals",
+      "type": "Official Source",
+      "description": "United Nations Sustainable Development Goals portal"
+    },
+    {
+      "name": "Tamil Nadu SDG Portal",
+      "url": "https://www.tn.gov.in/sdg",
+      "type": "Government Portal",
+      "description": "Official Tamil Nadu government SDG monitoring platform"
+    },
+    {
+      "name": "NITI Aayog SDG Index",
+      "url": "https://www.niti.gov.in/sdg-india-index",
+      "type": "National Portal",
+      "description": "India's SDG progress tracking platform"
+    },
+    {
+      "name": "TN Skill Development Corporation",
+      "url": "https://www.tnskill.tn.gov.in",
+      "type": "Government Agency",
+      "description": "State skill development programs and initiatives"
+    },
+    {
+      "name": "TN Industrial Portal",
+      "url": "https://www.investingintamilnadu.com",
+      "type": "Investment Portal",
+      "description": "Industrial development and investment information"
+    },
+    {
+      "name": "NSDC Approved Training Partners",
+      "url": "static/pdfs/NSDC approved training partners details-1-1032.pdf",
+      "type": "PDF Document",
+      "description": "Detailed list of NSDC-approved training partners"
+    }
+  ],
+  "social_media": {
+    "twitter": "@tnsdg",
+    "facebook": "TNSDGInitiative",
+    "linkedin": "tamil-nadu-sdg"
+  }
+}

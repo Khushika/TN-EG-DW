@@ -1,0 +1,48 @@
+{
+  "initiatives": [
+    {
+      "title": "Tamil Nadu Rural Transformation Project",
+      "description": "Comprehensive project targeting rural employment and enterprise development through skill training, market linkages, and financial inclusion",
+      "impact": "400,000+ households",
+      "year": 2023,
+      "key_metrics": {
+        "funds_allocated": "₹2,500 Cr",
+        "districts_covered": 31,
+        "employment_generated": 150000
+      },
+      "focus_areas": [
+        "Skill Development",
+        "Enterprise Support",
+        "Market Access"
+      ]
+    },
+    {
+      "title": "Naan Mudhalvan",
+      "description": "State-wide skill development program focusing on industry-relevant training and placement support for youth",
+      "impact": "150,000+ trained",
+      "year": 2023,
+      "key_metrics": {
+        "funds_allocated": "₹1,500 Cr",
+        "training_centers": 500,
+        "placement_rate": "75%"
+      },
+      "focus_areas": ["Digital Skills", "Soft Skills", "Technical Training"]
+    },
+    {
+      "title": "MSME Technology Upgradation Scheme",
+      "description": "Program to support technological modernization of MSMEs to enhance productivity and competitiveness",
+      "impact": "25,000+ MSMEs",
+      "year": 2023,
+      "key_metrics": {
+        "funds_allocated": "₹800 Cr",
+        "technologies_adopted": 150,
+        "productivity_increase": "32%"
+      },
+      "focus_areas": [
+        "Technology Adoption",
+        "Process Improvement",
+        "Quality Standards"
+      ]
+    }
+  ]
+}

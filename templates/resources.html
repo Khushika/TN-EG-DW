@@ -1,0 +1,32 @@
+<!-- templates/resources.html -->
+{% extends "base.html" %} {% block title %}Resources{% endblock %} {% block
+content %}
+<h1>Resources and References</h1>
+<div class="row">
+  {% for reference in resources.references %}
+  <div class="col-md-6 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ reference.name }}</h5>
+        <p class="card-text">
+          <small class="text-muted">Type: {{ reference.type }}</small>
+        </p>
+        {% if reference.type == "PDF" %}
+        <a
+          href="{{ url_for('static', filename='pdfs/NSDC_approved_training_partners.pdf') }}"
+          class="btn btn-success"
+          target="_blank"
+          download
+          >Download PDF</a
+        >
+        {% else %}
+        <a href="{{ reference.url }}" class="btn btn-primary" target="_blank"
+          >Visit Resource</a
+        >
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

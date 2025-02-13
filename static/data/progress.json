@@ -1,0 +1,56 @@
+{
+  "metrics": [
+    {
+      "indicator": "Employment Rate",
+      "value": "67.5%",
+      "change": "+2.3%",
+      "year": 2023,
+      "target": "70%",
+      "status": "On Track"
+    },
+    {
+      "indicator": "MSME Growth",
+      "value": "12.8%",
+      "change": "+1.5%",
+      "year": 2023,
+      "target": "15%",
+      "status": "On Track"
+    },
+    {
+      "indicator": "Skill Development",
+      "value": "58.4%",
+      "change": "+3.2%",
+      "year": 2023,
+      "target": "65%",
+      "status": "Needs Attention"
+    },
+    {
+      "indicator": "Women Employment",
+      "value": "42.5%",
+      "change": "+4.1%",
+      "year": 2023,
+      "target": "50%",
+      "status": "On Track"
+    }
+  ],
+  "district_performance": [
+    {
+      "district": "Chennai",
+      "employment_rate": "72.5%",
+      "growth": "+3.2%",
+      "status": "On Track"
+    },
+    {
+      "district": "Coimbatore",
+      "employment_rate": "70.1%",
+      "growth": "+2.8%",
+      "status": "On Track"
+    },
+    {
+      "district": "Madurai",
+      "employment_rate": "65.3%",
+      "growth": "+1.5%",
+      "status": "Needs Focus"
+    }
+  ]
+}

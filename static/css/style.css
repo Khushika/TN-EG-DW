@@ -1,0 +1,446 @@
+/* static/css/style.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.jumbotron {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.display-4 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.progress-card {
+  background: linear-gradient(45deg, #4caf50, #45a049);
+  color: white;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+}
+
+.list-group-item {
+  border-left: none;
+  border-right: none;
+}
+
+.badge {
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 1rem;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+.sector-card {
+  padding: 1.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.sector-card:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-5px);
+}
+
+.initiative-item {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1rem;
+}
+
+.initiative-item:last-child {
+  border-bottom: none;
+}
+
+.success-story {
+  padding: 1rem;
+  border-left: 4px solid #28a745;
+  background-color: #f8f9fa;
+  margin-bottom: 1rem;
+}
+
+.bi {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .sector-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Additional styles for goals page */
+.target-card {
+  padding: 1.5rem;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.target-card:hover {
+  transform: translateY(-5px);
+}
+
+.target-icon {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.sector-program-card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.sector-program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sector-program-card i {
+  font-size: 2rem;
+  color: #198754;
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #dee2e6;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-badge {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 55%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: 0;
+  margin-right: 55%;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 1rem;
+  }
+
+  .timeline-badge {
+    left: 1rem;
+  }
+
+  .timeline-content {
+    width: 80%;
+    margin-left: 3rem;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 3rem;
+    margin-right: 0;
+  }
+}
+
+/* Progress page specific styles */
+.metric-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metric-header {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.metric-change {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.metric-change.positive {
+  color: #198754;
+}
+
+.metric-change.negative {
+  color: #dc3545;
+}
+
+.sector-item {
+  margin-bottom: 1.5rem;
+}
+
+.sector-label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.milestone-timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.milestone-timeline::before {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dee2e6;
+}
+
+.milestone {
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.milestone-marker {
+  position: absolute;
+  left: 1.5rem;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.milestone.completed .milestone-marker i {
+  color: #198754;
+}
+
+.milestone.active .milestone-marker i {
+  color: #0d6efd;
+}
+
+.challenge-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+}
+
+.challenge-icon {
+  font-size: 2rem;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.action-items {
+  margin-top: 1rem;
+}
+
+.action-items .badge {
+  margin: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .milestone-timeline::before {
+    left: 1rem;
+  }
+
+  .milestone {
+    padding-left: 3rem;
+  }
+
+  .milestone-marker {
+    left: 1rem;
+  }
+}
+
+/* Data page specific styles */
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stat-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.stat-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.stat-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.trend-indicator {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.trend-indicator.positive {
+  color: #198754;
+}
+
+.trend-indicator.negative {
+  color: #dc3545;
+}
+
+.sector-row {
+  margin-bottom: 1.5rem;
+}
+
+.sector-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.sector-percentage {
+  font-weight: bold;
+}
+
+.sector-details {
+  margin-top: 0.5rem;
+}
+
+.growth-metrics .metric-item {
+  margin-bottom: 1.5rem;
+}
+
+.metric-label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.regional-data .region-name {
+  font-weight: bold;
+}
+
+.regional-data .region-districts {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.skills-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills-chart {
+  margin-top: 1rem;
+}
+
+.chart-label {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.dashboard-controls {
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

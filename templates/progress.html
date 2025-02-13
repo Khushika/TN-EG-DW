@@ -1,0 +1,786 @@
+<!-- templates/progress.html -->
+{% extends "base.html" %} {% block title %}Progress{% endblock %} {% block
+content %}
+    <!-- Sector-wise Programs -->
+    <div class="card mb-1 mb-4">
+      <div class="card-header bg-success text-white">
+        <h3>Sector-wise Programs</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <div class="sector-program-card">
+              <i class="bi bi-laptop"></i>
+              <h4>IT & ITES</h4>
+              <ul class="list-unstyled">
+                <li>Digital Skills Training</li>
+                <li>Coding Bootcamps</li>
+                <li>Tech Internships</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="sector-program-card">
+              <i class="bi bi-tools"></i>
+              <h4>Manufacturing</h4>
+              <ul class="list-unstyled">
+                <li>Apprenticeship Program</li>
+                <li>Industry 4.0 Training</li>
+                <li>Safety Certification</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="sector-program-card">
+              <i class="bi bi-shop"></i>
+              <h4>MSMEs</h4>
+              <ul class="list-unstyled">
+                <li>Credit Support</li>
+                <li>Technology Upgrade</li>
+                <li>Market Linkage</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="sector-program-card">
+              <i class="bi bi-globe"></i>
+              <h4>Services</h4>
+              <ul class="list-unstyled">
+                <li>Skill Enhancement</li>
+                <li>Professional Training</li>
+                <li>Certification Courses</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Overall Progress Dashboard -->
+<div class="progress-dashboard mb-4">
+  <div class="card">
+    <div class="card-header bg-primary text-white">
+      <h3>SDG 8 Progress</h3>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        {% for metric in progress.metrics %}
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div class="metric-card">
+            <div class="metric-header">{{ metric.indicator }}</div>
+            <div class="metric-value">{{ metric.value }}</div>
+            <div
+              class="metric-change {% if '+' in metric.change %}positive{% else %}negative{% endif %}"
+            >
+              <i
+                class="bi bi-arrow-{% if '+' in metric.change %}up{% else %}down{% endif %}-circle-fill"
+              ></i>
+              {{ metric.change }}
+            </div>
+            <div class="progress mt-2">
+              <div
+                class="progress-bar {% if '+' in metric.change %}bg-success{% else %}bg-danger{% endif %}"
+                role="progressbar"
+                style="width: {{ metric.value|replace('%', '') }}%"
+              ></div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Regional Performance -->
+<div class="row mb-4">
+  <div class="col-md-5">
+    <div class="card h-100">
+      <div class="card-header bg-info text-white">
+        <h3>District-wise Progress</h3>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>District</th>
+                <th>Employment Rate</th>
+                <th>Growth</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chennai</td>
+                <td>72.5%</td>
+                <td class="text-success">+3.2%</td>
+                <td><span class="badge bg-success">On Track</span></td>
+              </tr>
+              <tr>
+                <td>Coimbatore</td>
+                <td>70.1%</td>
+                <td class="text-success">+2.8%</td>
+                <td><span class="badge bg-success">On Track</span></td>
+              </tr>
+              <tr>
+                <td>Madurai</td>
+                <td>65.3%</td>
+                <td class="text-warning">+1.5%</td>
+                <td><span class="badge bg-warning">Needs Focus</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-90">
+      <div class="card-header bg-success text-white">
+        <h3>Sector Performance</h3>
+      </div>
+      <div class="card-body">
+        <div class="sector-metrics">
+          <div class="sector-item">
+            <div class="sector-label">IT & ITES</div>
+            <div class="progress">
+              <div class="progress-bar bg-primary" style="width: 85%">85%</div>
+            </div>
+          </div>
+          <div class="sector-item">
+            <div class="sector-label">Manufacturing</div>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 78%">78%</div>
+            </div>
+          </div>
+          <div class="sector-item">
+            <div class="sector-label">Agriculture</div>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 65%">65%</div>
+            </div>
+          </div>
+          <div class="sector-item">
+            <div class="sector-label">Services</div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" style="width: 72%">72%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header bg-success text-white">
+        <h3>Growth Indicators</h3>
+      </div>
+      <div class="card-body">
+        <div class="growth-metrics">
+          <div class="metric-item">
+            <div class="metric-label">GDP Growth</div>
+            <div class="metric-chart">
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 82%">
+                  8.2%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-label">Employment Growth</div>
+            <div class="metric-chart">
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 67%">6.7%</div>
+              </div>
+            </div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-label">Wage Growth</div>
+            <div class="metric-chart">
+              <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 75%">
+                  7.5%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container company-listing">
+      <!-- Header Section -->
+      <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+          <h2>Corporate Partners - SDG 8 Implementation</h2>
+          <p class="mb-0">
+            Companies Leading Sustainable Economic Growth in Tamil Nadu
+          </p>
+        </div>
+      </div>
+
+      <!-- Company Rankings Overview -->
+      <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+          <h3>Top Performing Companies</h3>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Company</th>
+                  <th>Impact Score</th>
+                  <th>Key Focus Areas</th>
+                  <th>Jobs Created</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Tata Consultancy Services</td>
+                  <td>95/100</td>
+                  <td>Digital Skills, Employment</td>
+                  <td>25,000+</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Zoho Corporation</td>
+                  <td>92/100</td>
+                  <td>Rural Employment, Education</td>
+                  <td>12,000+</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>TVS Motor Company</td>
+                  <td>90/100</td>
+                  <td>Manufacturing Skills</td>
+                  <td>15,000+</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Company Listings -->
+      <div class="row">
+        <!-- IT & Technology Sector -->
+        <div class="col-12 mb-4">
+          <div class="card">
+            <div class="card-header bg-info text-white">
+              <h3>IT & Technology Sector</h3>
+            </div>
+            <div class="card-body">
+              <!-- TCS -->
+              <div class="company-card mb-4">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>Tata Consultancy Services (TCS)</h4>
+                    <p class="lead">
+                      Leading IT services and consulting company focusing on
+                      digital transformation and skill development.
+                    </p>
+                    <div class="initiatives mt-3">
+                      <h5>Key Initiatives:</h5>
+                      <ul>
+                        <li>
+                          TCS iON: Free digital learning platform reaching
+                          500,000+ students
+                        </li>
+                        <li>
+                          Digital Impact Square: Innovation center supporting
+                          200+ startups
+                        </li>
+                        <li>
+                          BridgeIT: Rural employment program creating 5000+ jobs
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="company-metrics">
+                      <div class="metric">
+                        <span class="label">Impact Score</span>
+                        <span class="value">95/100</span>
+                      </div>
+                      <div class="metric">
+                        <span class="label">Jobs Created</span>
+                        <span class="value">25,000+</span>
+                      </div>
+                      <a
+                        href="https://www.tcs.com"
+                        class="btn btn-primary mt-3"
+                        target="_blank"
+                        >Visit Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Zoho -->
+              <div class="company-card mb-4">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>Zoho Corporation</h4>
+                    <p class="lead">
+                      Software development company pioneering rural development
+                      through technology education.
+                    </p>
+                    <div class="initiatives mt-3">
+                      <h5>Key Initiatives:</h5>
+                      <ul>
+                        <li>Zoho Schools: Free technology education program</li>
+                        <li>
+                          Rural Office Initiative: Creating tech hubs in
+                          villages
+                        </li>
+                        <li>
+                          Zoho Marketplace: Platform for local entrepreneurs
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="company-metrics">
+                      <div class="metric">
+                        <span class="label">Impact Score</span>
+                        <span class="value">92/100</span>
+                      </div>
+                      <div class="metric">
+                        <span class="label">Jobs Created</span>
+                        <span class="value">12,000+</span>
+                      </div>
+                      <a
+                        href="https://www.zoho.com"
+                        class="btn btn-primary mt-3"
+                        target="_blank"
+                        >Visit Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manufacturing Sector -->
+        <div class="col-12 mb-4">
+          <div class="card">
+            <div class="card-header bg-warning text-dark">
+              <h3>Manufacturing Sector</h3>
+            </div>
+            <div class="card-body">
+              <!-- TVS -->
+              <div class="company-card mb-4">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>TVS Motor Company</h4>
+                    <p class="lead">
+                      Two-wheeler manufacturer focusing on sustainable
+                      manufacturing and skill development.
+                    </p>
+                    <div class="initiatives mt-3">
+                      <h5>Key Initiatives:</h5>
+                      <ul>
+                        <li>TVS Institute of Quality and Leadership</li>
+                        <li>Green Manufacturing Initiative</li>
+                        <li>Apprenticeship Program (5000+ trained)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="company-metrics">
+                      <div class="metric">
+                        <span class="label">Impact Score</span>
+                        <span class="value">90/100</span>
+                      </div>
+                      <div class="metric">
+                        <span class="label">Jobs Created</span>
+                        <span class="value">15,000+</span>
+                      </div>
+                      <a
+                        href="https://www.tvsmotor.com"
+                        class="btn btn-primary mt-3"
+                        target="_blank"
+                        >Visit Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Saint-Gobain -->
+              <div class="company-card mb-4">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>Saint-Gobain India</h4>
+                    <p class="lead">
+                      Building materials manufacturer promoting sustainable
+                      construction and vocational training.
+                    </p>
+                    <div class="initiatives mt-3">
+                      <h5>Key Initiatives:</h5>
+                      <ul>
+                        <li>Skills Training Institute</li>
+                        <li>Green Building Program</li>
+                        <li>Rural Development Projects</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="company-metrics">
+                      <div class="metric">
+                        <span class="label">Impact Score</span>
+                        <span class="value">88/100</span>
+                      </div>
+                      <div class="metric">
+                        <span class="label">Jobs Created</span>
+                        <span class="value">8,000+</span>
+                      </div>
+                      <a
+                        href="https://www.saint-gobain.co.in"
+                        class="btn btn-primary mt-3"
+                        target="_blank"
+                        >Visit Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container project-listing">
+<!-- Header Section -->
+<div class="card mb-4">
+  <div class="card-header bg-primary text-white">
+    <h2>Projects and Initiatives - SDG 8</h2>
+    <p class="mb-0">
+      Comprehensive List of Projects Supporting Decent Work and Economic
+      Growth in Tamil Nadu
+    </p>
+  </div>
+</div>
+
+<!-- Government Projects -->
+<div class="category-section mb-5">
+  <div class="section-header bg-success text-white p-3 rounded">
+    <h3>Government Initiatives</h3>
+  </div>
+
+  <!-- Tamil Nadu Skill Development Corporation (TNSDC) Projects -->
+  <div class="project-card mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h4>Tamil Nadu Skill Development Corporation Programs</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="project-details">
+              <h5>Key Projects:</h5>
+              <ul>
+                <li>
+                  <strong>Naan Mudhalvan</strong>
+                  <p>
+                    Comprehensive skill development program targeting youth
+                    employability
+                  </p>
+                  <div class="metrics">
+                    <span class="badge bg-primary"
+                      >500,000+ Beneficiaries</span
+                    >
+                    <span class="badge bg-success">2021-Present</span>
+                  </div>
+                </li>
+                <li>
+                  <strong
+                    >Tamil Nadu Rural Employment Guarantee Scheme</strong
+                  >
+                  <p>Employment guarantee program for rural areas</p>
+                  <div class="metrics">
+                    <span class="badge bg-primary">2M+ Beneficiaries</span>
+                    <span class="badge bg-success">Ongoing</span>
+                  </div>
+                </li>
+                <li>
+                  <strong
+                    >Skills Training for Industrial Development</strong
+                  >
+                  <p>Industry-specific skill development program</p>
+                  <div class="metrics">
+                    <span class="badge bg-primary">100,000+ Trained</span>
+                    <span class="badge bg-success">2022-Present</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-metrics">
+              <h5>Overall Impact</h5>
+              <div class="metric">
+                <span class="label">Total Budget</span>
+                <span class="value">₹1000 Cr+</span>
+              </div>
+              <div class="metric">
+                <span class="label">Districts Covered</span>
+                <span class="value">38</span>
+              </div>
+              <div class="metric">
+                <span class="label">Success Rate</span>
+                <span class="value">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MSME Development Institute Projects -->
+  <div class="project-card mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h4>MSME Development Initiatives</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="project-details">
+              <h5>Key Projects:</h5>
+              <ul>
+                <li>
+                  <strong
+                    >Prime Minister's Employment Generation Programme
+                    (PMEGP)</strong
+                  >
+                  <p>
+                    Credit-linked subsidy program for setting up micro
+                    enterprises
+                  </p>
+                  <div class="metrics">
+                    <span class="badge bg-primary"
+                      >50,000+ Enterprises</span
+                    >
+                    <span class="badge bg-success">Ongoing</span>
+                  </div>
+                </li>
+                <li>
+                  <strong>Credit Guarantee Fund Scheme</strong>
+                  <p>Collateral-free credit for MSMEs</p>
+                  <div class="metrics">
+                    <span class="badge bg-primary"
+                      >₹2000 Cr+ Disbursed</span
+                    >
+                    <span class="badge bg-success">2020-Present</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-metrics">
+              <h5>Overall Impact</h5>
+              <div class="metric">
+                <span class="label">Enterprises Supported</span>
+                <span class="value">75,000+</span>
+              </div>
+              <div class="metric">
+                <span class="label">Jobs Created</span>
+                <span class="value">200,000+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Private Sector Projects -->
+<div class="category-section mb-5">
+  <div class="section-header bg-info text-white p-3 rounded">
+    <h3>Private Sector Initiatives</h3>
+  </div>
+
+  <!-- TCS Projects -->
+  <div class="project-card mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h4>TCS Digital Impact Projects</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="project-details">
+              <h5>Active Projects:</h5>
+              <ul>
+                <li>
+                  <strong>TCS iON Digital Learning Hub</strong>
+                  <p>Free digital skills training platform</p>
+                  <div class="metrics">
+                    <span class="badge bg-primary">300,000+ Users</span>
+                    <span class="badge bg-success">2021-Present</span>
+                  </div>
+                </li>
+                <li>
+                  <strong>BridgeIT Rural Employment</strong>
+                  <p>Rural technology employment program</p>
+                  <div class="metrics">
+                    <span class="badge bg-primary">5000+ Employed</span>
+                    <span class="badge bg-success">2022-Present</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-metrics">
+              <h5>Impact Metrics</h5>
+              <div class="metric">
+                <span class="label">Investment</span>
+                <span class="value">₹500 Cr+</span>
+              </div>
+              <div class="metric">
+                <span class="label">Employment Generated</span>
+                <span class="value">25,000+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NGO Projects -->
+<div class="category-section mb-5">
+  <div class="section-header bg-warning text-dark p-3 rounded">
+    <h3>NGO Initiatives</h3>
+  </div>
+
+  <!-- MSSRF Projects -->
+  <div class="project-card mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h4>MSSRF Rural Development Programs</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="project-details">
+              <h5>Current Projects:</h5>
+              <ul>
+                <li>
+                  <strong>Bio-village Program</strong>
+                  <p>Sustainable agriculture and rural employment</p>
+                  <div class="metrics">
+                    <span class="badge bg-primary">100+ Villages</span>
+                    <span class="badge bg-success">Ongoing</span>
+                  </div>
+                </li>
+                <li>
+                  <strong>Women Entrepreneurship Initiative</strong>
+                  <p>Supporting women-led rural enterprises</p>
+                  <div class="metrics">
+                    <span class="badge bg-primary"
+                      >10,000+ Beneficiaries</span
+                    >
+                    <span class="badge bg-success">2023-Present</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-metrics">
+              <h5>Overall Impact</h5>
+              <div class="metric">
+                <span class="label">Villages Covered</span>
+                <span class="value">200+</span>
+              </div>
+              <div class="metric">
+                <span class="label">Livelihoods Created</span>
+                <span class="value">15,000+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Educational Institution Projects -->
+<div class="category-section mb-5">
+  <div class="section-header bg-danger text-white p-3 rounded">
+    <h3>Educational Institution Initiatives</h3>
+  </div>
+
+  <!-- Anna University Projects -->
+  <div class="project-card mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h4>Anna University Skill Development Programs</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="project-details">
+              <h5>Active Programs:</h5>
+              <ul>
+                <li>
+                  <strong>Industry-Academia Partnership</strong>
+                  <p>
+                    Collaborative skill development with industry partners
+                  </p>
+                  <div class="metrics">
+                    <span class="badge bg-primary"
+                      >50+ Industry Partners</span
+                    >
+                    <span class="badge bg-success">2022-Present</span>
+                  </div>
+                </li>
+                <li>
+                  <strong>Rural Technology Program</strong>
+                  <p>Technology training for rural youth</p>
+                  <div class="metrics">
+                    <span class="badge bg-primary">5000+ Students</span>
+                    <span class="badge bg-success">2023-Present</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-metrics">
+              <h5>Program Impact</h5>
+              <div class="metric">
+                <span class="label">Students Trained</span>
+                <span class="value">10,000+</span>
+              </div>
+              <div class="metric">
+                <span class="label">Placement Rate</span>
+                <span class="value">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    {% endblock %}
+  </div>
+</div>

@@ -1,0 +1,185 @@
+<!-- templates/home.html -->
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<div class="jumbotron">
+  <!-- Hero Section with Personal Introduction -->
+  <div
+    class="jumbotron bg-primary text-white mb-4 position-relative overflow-hidden"
+  >
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <h1 class="display-4 fw-bold">
+            Decent Work and Economic Growth Opportunities in Tamil Nadu
+          </h1>
+          <p class="lead mb-4">
+            I am Khushika Reddy, and I developed this website as part of the
+            Software Reuse coursework under Dr. Praveen Joe.
+          </p>
+          <p class="lead mb-4">
+            This website explores some sectors that actively work on SDG Goal 8,
+            its impact, and are having ongoing initiatives in Tamil Nadu.This
+            website majorly highlights the top companies that have contributed
+            for the Tamil Nadu's Economic Growth and Improvement of Quality of
+            Work along with schemes and training opportunities that can help an
+            individual grow.
+          </p>
+          <p class="lead">
+            Supporting SDG 8: Promoting sustained, inclusive and sustainable
+            economic growth, full and productive employment and decent work for
+            all.
+          </p>
+          <div class="mt-4">
+            <a href="/progress" class="btn btn-light btn-lg me-3"
+              >Explore Initiatives</a
+            >
+            <a href="/data" class="btn btn-outline-light btn-lg"
+              >Grab Opportunities</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Statistics Dashboard -->
+  <div class="row mb-4">
+    <div class="col-md-3">
+      <div class="card bg-primary text-white hover-lift">
+        <div class="card-body text-center">
+          <h3>₹12.5L Cr</h3>
+          <p>GSDP (2023-24)</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-success text-white hover-lift">
+        <div class="card-body text-center">
+          <h3>8.19%</h3>
+          <p>Growth Rate</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-info text-white hover-lift">
+        <div class="card-body text-center">
+          <h3>2.3M</h3>
+          <p>MSMEs</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-warning text-white hover-lift">
+        <div class="card-body text-center">
+          <h3>67.5%</h3>
+          <p>Employment Rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Initiatives -->
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h3>Featured Initiatives: Skill Development Programs</h3>
+        </div>
+        <div class="card-body">
+          <div class="initiative-carousel">
+            <!-- Naan Mudhalvan -->
+            <div class="initiative-item mb-3">
+              <h4>Naan Mudhalvan</h4>
+              <p>
+                A flagship program aimed at skilling 10 lakh youth annually.
+                Features:
+              </p>
+              <ul>
+                <li>Industry-aligned curriculum</li>
+                <li>Placement assistance</li>
+                <li>Entrepreneurship support</li>
+              </ul>
+            </div>
+            <!-- TNSDC -->
+            <div class="initiative-item mb-3">
+              <h4>Tamil Nadu Skill Development Corporation</h4>
+              <p>Providing market-driven skill training through:</p>
+              <ul>
+                <li>1000+ training centers</li>
+                <li>150+ courses</li>
+                <li>Industry partnerships</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <!-- Success Stories -->
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          <h3>Success Stories</h3>
+        </div>
+        <div class="card-body">
+          <div class="success-story mb-3">
+            <h5>Rural Women Entrepreneurs</h5>
+            <p>
+              50,000+ women empowered through TNSRLM's enterprise development
+              program
+            </p>
+          </div>
+          <div class="success-story">
+            <h5>Tech Transformation</h5>
+            <p>
+              100,000+ youth placed in IT sector through skill development
+              initiatives
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest Updates -->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          <h3>Latest Policies</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h5>TN Industrial Policy 2023</h5>
+              <p>Target: ₹10L Cr investments, 20L jobs</p>
+            </li>
+            <li class="list-group-item">
+              <h5>Startup TN Mission</h5>
+              <p>₹100 Cr fund for innovation</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-secondary text-white">
+          <h3>Recent Events</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h5>Global Investors Meet 2024</h5>
+              <p>Target: ₹5L Cr investments</p>
+            </li>
+            <li class="list-group-item">
+              <h5>Skill Summit 2024</h5>
+              <p>Focus: Future skills & employment</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
