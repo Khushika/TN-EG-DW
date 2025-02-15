@@ -1,24 +1,35 @@
-# TN-EG-DW - SDG Website  
+# 🌍 SDG 8: Decent Work and Economic Growth in Tamil Nadu  
 
-This is a Flask-based web application that showcases data related to Sustainable Development Goals (SDGs). It displays various statistics, initiatives, progress, and resources using interactive and responsive web pages.  
+A static website showcasing information about United Nations Sustainable Development Goal 8 (SDG 8) – Decent Work and Economic Growth, with a special focus on Tamil Nadu. This platform highlights the state’s progress, valuable resources, and dynamic opportunities supporting economic growth and employment.  
 
-## Features  
-- Interactive and responsive design  
-- Displays statistics, initiatives, progress, and resources related to SDGs  
-- Data-driven approach using JSON files  
-- Built with Flask, HTML, CSS  
+## ♻️ Reused Components and Useful Aspects  
+
+- **Dynamic Content Management:**  
+  - JSON-based content management for scalability and easy maintenance.  
+
+- **Modular Template Structure:**  
+  - Reusable components for consistent UI/UX across all pages.  
+
+- **Clean and Maintainable Architecture:**  
+  - Organized Flask application structure for better maintainability.  
+
+- **Interactive Visualizations:**  
+  - Data visualizations with interactive elements for user engagement.  
 
 ---
 
-## Prerequisites  
-- Python 3.x  
-- Git  
+## ✅ Prerequisites  
+
+Before you begin, ensure you have the following installed:  
+- **Python** (Version 3.6 or above)  
+- **Git** for version control  
+- **Virtual Environment** (Recommended for package management)  
 
 ---
 
-## Installation  
+## 🔧 Installation  
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/Khushika/TN-EG-DW.git
-   cd TN-EG-DW
+1. **Clone the Repository:**  
+```bash
+git clone https://github.com/Khushika/TN-EG-DW.git
+cd TN-EG-DW
