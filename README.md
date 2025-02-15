@@ -14,7 +14,7 @@ A static website showcasing information about United Nations Sustainable Develop
   - Organized Flask application structure for better maintainability.  
 
 - **Interactive Visualizations:**  
-  - Data visualizations with interactive elements for user engagement.  
+  - Data visualizations for user engagement.  
 
 ---
 
